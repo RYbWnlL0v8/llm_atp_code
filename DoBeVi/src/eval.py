@@ -1,6 +1,6 @@
 import os
-os.environ['RAY_TEMP_DIR'] = '/data1/xs/tmp'
-os.environ['CUDA_VISIBLE_DEVICES'] = "6,7"
+os.environ['RAY_TEMP_DIR'] = '/path/to/ray_temp'
+os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 os.environ['RAY_DEDUP_LOGS'] = '0' 
 os.environ['RAY_memory_monitor_refresh_ms'] = '0'

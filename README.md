@@ -20,45 +20,49 @@ Visual/                      # Contains some proof search tree visualization ima
 README.md                    # Project documentation
 ```
 
-### Preparation
+## Preparation
 
-##### Create and  activate conda environment
+### Create and Activate Conda Environment
 
 ```bash
 conda create -n dobevi python=3.11 -y
 conda activate dobevi
 ```
 
-##### Install Python dependencies
+### Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-##### Install Graphviz dependencies (Required for visualization)
+### Install Graphviz Dependencies (Required for Visualization)
 
 ```bash
 conda install -c conda-forge graphviz
 ```
 
-### Evaluation
+### Download the Policy Model
+
+Please download the policy model from the [HuggingFace page](https://huggingface.co/RYbWnlL0v8/llm_atp_model).
+
+## Evaluation
 
 To run the evaluation, please follow these steps:
 
-##### Prepare a Lean 4 Repository
+### Prepare a Lean 4 Repository
 
- You need a Lean 4 project repository that can be built successfully with `lake build`. 
+You need a Lean 4 project repository that can be built successfully with `lake build`. 
 
-##### Configure Environment Variables
+### Configure Environment Variables
 
- Copy the environment variable template file . Edit it according to your setup.
+Copy the environment variable template file . Edit it according to your setup.
 
 ```bash
 cd src/
 cp .env.template .env
 ```
 
-##### Running Benchmarks
+### Running Benchmarks
 
 ```bash
 python -m eval
