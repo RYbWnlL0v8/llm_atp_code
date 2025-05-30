@@ -55,7 +55,7 @@ You need a Lean 4 project repository that can be built successfully with `lake b
 
 ### Configure Environment Variables
 
-Copy the environment variable template file . Edit it according to your setup.
+Copy the environment variable template file. In the `.env` file, you need to configure settings according to your setup and evaluation requirements. This includes specifying the benchmark path, model path, budget for the tree search process, and the path for saving evaluation results. Refer to the template for more details
 
 ```bash
 cd src/
