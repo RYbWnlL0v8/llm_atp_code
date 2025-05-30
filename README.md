@@ -1,5 +1,3 @@
-# 
-
 # LLM-based Automated Theorem Proving Hinges on Scalable Synthetic Data Generation
 
 This repository contains the implementation for the paper *"LLM-based Automated Theorem Proving Hinges on Scalable Synthetic Data Generation"*
@@ -65,4 +63,3 @@ cp .env.template .env
 ```bash
 python -m eval
 ```
-
